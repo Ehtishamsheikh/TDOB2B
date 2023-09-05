@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Travel Destination Online - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- <link href="assets/css/style-color2.css" rel="stylesheet"> -->
+
+<style type="text/css">
+  .sticky-container{
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-170px;
+    top:50%;
+    width:240px;
+    z-index: 1100;
+}
+.sticky li{
+    list-style-type:none;
+    background-color: #598EC2;
+    color:#efefef;
+    height:43px;
+    padding:0px 0px 0px 8px;
+    margin:0px 0px 1px 0px;
+    -webkit-transition:all 0.25s ease-in-out;
+    -moz-transition:all 0.25s ease-in-out;
+    -o-transition:all 0.25s ease-in-out;
+    transition:all 0.25s ease-in-out;
+    cursor:pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+
+}
+.sticky li i{
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+.sticky li:hover .sticky-container{
+}
+.sticky li:hover{
+    margin-left:-140px;
+    box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.61);
+-webkit-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.61);
+-moz-box-shadow: -2px 0px 5px 0px rgba(0,0,0,0.61);
+}
+.sticky li img{
+    float:left;
+    margin:5px 4px;
+    margin-right:5px;
+}
+.sticky li p{
+    padding-top:5px;
+    margin:0px;
+    line-height:16px;
+    font-size:11px;
+}
+.sticky li p a{
+    text-decoration:none;
+    color:#2C3539;
+}
+.sticky li p a:hover{
+    text-decoration:underline;
+}
+.theme-buttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 0px 0px 10px;
+}
+#theme-button-1{
+ background: rgb(131,52,113);
+background: linear-gradient(90deg, rgba(131,52,113,1) 50%, rgba(111,30,81,1) 50%);
+  width: 25px;
+  height: 25px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  margin: 4px;
+}
+#theme-button-2{
+ background: rgb(39,60,117);
+background: linear-gradient(90deg, rgba(39,60,117,1) 50%, rgba(25,42,86,1) 50%);
+  width: 25px;
+  height: 25px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  margin: 4px;
+}
+#theme-button-3{
+  background: rgb(72,84,96);
+background: linear-gradient(90deg, rgba(72,84,96,1) 50%, rgba(30,39,46,1) 50%);
+  width: 25px;
+  height: 25px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  margin: 4px;
+}
+#theme-button-4{
+  background-color: #0B4C84;
+  width: 25px;
+  height: 25px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  margin: 4px;
+}
+</style>
+</head>
+
+<body>
+  <div class="sticky-container">
+    <ul class="sticky">
+        <li>
+          <i class="bi bi-gear-fill"></i>
+            <div class="theme-buttons">
+              <button class="theme-button" data-theme="theme1" id="theme-button-1"></button>
+              <button class="theme-button" data-theme="theme2" id="theme-button-2"></button>
+              <button class="theme-button" data-theme="theme3" id="theme-button-3"></button>
+              <button class="theme-button" data-theme="theme4" id="theme-button-4"></button>
+            </div>
+        </li>
+        
+    </ul>
+</div>
+<!-- /////////////////////////////////side setting bar/////////////////////// -->
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+
+      <!-- <nav id="navbar" class="navbar">
+        <ul>
+          <ul>
+          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
+          <li><a class="nav-link scrollto" href="hotel_search.html">Hotels</a></li>
+          <li><a class="nav-link scrollto" href="flight_search.html">Flights</a></li>
+          <li><a class="nav-link scrollto" href="umrah.html">Umrah</a></li>
+          <li><a class="nav-link scrollto" href="transfers.html">Transfers</a></li>
+          <li><a class="nav-link scrollto" href="sightseeing.html">Sightseeing</a></li>
+          <li><a class="nav-link scrollto" href="packages.html">Packages</a></li>
+          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
+        </ul>
+        </ul>
+         
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav> --><!-- .navbar -->
+      <nav id="navbar" class="navbar">
+          <ul>
+             <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
+            <li><a class="nav-link scrollto" href="hotel_search.html">Hotels</a></li>
+            <li><a class="nav-link scrollto" href="flight_search.html">Flights</a></li>
+            <li><a class="nav-link scrollto" href="umrah.html">Umrah</a></li>
+            <!-- <li><a class="nav-link scrollto" href="transfers.html">Transfers</a></li>
+            <li><a class="nav-link scrollto" href="sightseeing.html">Sightseeing</a></li>
+            <li><a class="nav-link scrollto" href="packages.html">Packages</a></li> -->
+            <li class="dropdown"><a href="#" class="active"><span>More Searches</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="transfers.html">Transfers</a></li>
+                <li><a href="sightseeing.html">Sightseeing</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="group_bookings.html">Group Bookings</a></li>
+              <li><a href="visa.html">VISA</a></li>
+              <li><a href="misc.html">MISC</a></li>
+            </ul>
+          </li>
+            <li><a class="nav-link scrollto" href="">Contact</a></li>    
+            <li class="dropdown"><a href="#"><span><i class="bi bi-person-circle" style="font-size: 16px;"></i> User, CX231</a>
+            <ul>
+              <li><a href="myAccount.html">My Account</a></li>
+              <li><a href="myBookings.html">My Bookings</a></li>
+              <li><a href="myReports.html">Reports</a></li>
+              <li><a href="quotation.html">Quotation</a></li>
+              <li><a href="myTravellers.html">Travellers</a></li>
+              <li><a href="index.html">LogOut</a></li>
+            </ul>
+          </li>        
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/b2b_n.svg" class="img-fluid vert-move" alt="">
+        </div>
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <div class="loginForm_div">
+            <h4 class="loginForm_heading">Welcome Back!</h4>
+            <p class="loginForm_text">Enter your details below for login</p>
+            <div class="loginForm">
+              <form>
+                <!-- <div class="loginForm_input1">
+                  <input type="text" name="username" placeholder="Username">
+                  <i class="bi bi-person-fill"></i>
+                </div> -->
+                <div class="col-12">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+                    <input type="text" id="floatingInput"  class="form-control" placeholder="User ID" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-unlock-fill"></i></span>
+                    <input type="text" class="form-control" placeholder="Password" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
+                <div class="loginForm_rememberMe">
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Remember Me</label><br>
+                </div>
+                <div class="loginForm_button">
+                    <button class="loginBtn">Login</button>
+                </div>
+                <div class="loginForm_register">
+                    <p>Don't have an account? <a href="signup.html">Register Now</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+
+    <!-- ////////////////////////////////Top Destinations//////////////////////////////////////// -->
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Top Destinations</h2>
+          <hr class="topDestination_hr">
+        </header>
+
+        <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destinations/bangkok.jpeg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Bangkok</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/destinations/bangkok.jpeg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="View Image"><i class="bi bi-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6  portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destinations/bahrain.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Bahrain</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/destinations/bahrain.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="View Image"><i class="bi bi-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6  portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destinations/istanbul.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Istanbul</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/destinations/istanbul.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="View Image"><i class="bi bi-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6  portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destinations/jeddah.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Jeddah</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/destinations/jeddah.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="View Image"><i class="bi bi-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6  portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destinations/london.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>London</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/destinations/london.jpg" data-gallery="portfolioGallery" class="portfokio-lightbox" title="View Image"><i class="bi bi-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 portfolio-item">
+            <div class="portfolio-wrap">
+              <img src="assets/img/destinations/dubai.avif" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Dubai</h4>
+                <div class="portfolio-links">
+                  <a href="assets/img/destinations/dubai.avif" data-gallery="portfolioGallery" class="portfokio-lightbox" title="View Image"><i class="bi bi-plus"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- End Portfolio Section -->
+    <!-- /////////////////////About US Section///////////////////////////////////////// -->
+    <section id="" class="call-to-action">
+      <div class="container">
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h3>ABOUT TRAVEL DESTINATION ONLINE</h3>
+            <hr class="aboutUs_hr">
+            <p>Travel Destination Online a complete B2B travel Management Company specialized in providing excellent travel related services and products such as hotels, furnished service apartments, transfers, professionally guided sightseeing tours and packages offered to its customers around the world. We are incomparable when it comes to customer service and cost containment.</p>
+            <a class="cta-btn" href="#">Read More</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Call To Action Section -->
+
+
+
+    <!-- //////////////////////////////Online Presence/////////////////////////////////////// -->
+     <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Our Global Presence</h2>
+           <hr class="topDestination_hr">
+          
+        </header>
+
+        <!-- <div class="row">
+
+          <div class="col-lg-6">
+            <img src="assets/img/globe2-removebg-preview.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
+            <div class="row align-self-center gy-4">
+
+              <div class="col-md-6" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/pak.png">
+                  <h3>Pakistan</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/canada.png">
+                  <h3>Canada</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/turkey.png">
+                  <h3>Turkey</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/bahrain.png">
+                  <h3>Bahrain</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/saudia.jfif">
+                  <h3>Saudia Arabia</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/thai.png">
+                  <h3>Thailand</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/malaysia.png">
+                  <h3>Malaysia</h3>
+                </div>
+              </div>
+
+              <div class="col-md-6" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/uae.png">
+                  <h3>United Arab Emirates</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div> -->
+        <div class="row">
+          <div class="col-lg-12 ourGlobal">
+            <img src="assets/img/mapa-mundo-fotor-20230802141638.png">
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-lg-12 globalPresence_countries mt-5 mt-lg-0 d-flex">
+            
+              <div class="col-lg-3 col-md-3 col-12" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/pak.png">
+                  <h3>Pakistan</h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/canada.png">
+                  <h3>Canada</h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/turkey.png">
+                  <h3>Turkey</h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/bahrain.png">
+                  <h3>Bahrain</h3>
+                </div>
+              </div>
+            
+          </div>
+          <div class="col-lg-12 globalPresence_countries mt-5 d-flex">
+            
+              <div class="col-lg-3 col-md-3 col-sm-12" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/saudia.jfif">
+                  <h3>Saudia Arabia</h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/thai.png">
+                  <h3>Thailand</h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/malaysia.png">
+                  <h3>Malaysia</h3>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-12" data-aos="zoom-out">
+                <div class="feature-box d-flex align-items-center">
+                  <img src="assets/img/uae.png">
+                  <h3>UAE</h3>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+
+
+      </div>
+
+    </section><!-- End Features Section -->
+
+
+
+
+
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our mailing list & avail special offers, hot deals and much more </p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <!-- <span>FlexStart</span> -->
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra.<br> Justo eget nada terra videa magna derita valies darta donna<br> mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 footer-links">
+            <h4>Discover</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              Travel Destination Online Consultancy W.L.L
+              Office 222, Building 79, Road 2802,
+              Block 428 - Nordic Tower Seef, Kingdom Of Bahrain.<br><br>
+              <strong>Phone:</strong> ‭+973 13302122<br>
+              <strong>Email:</strong>  support@tdonlines.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="copyright">
+        © 2023 <strong>Travel Destination Online</strong>   All Rights Reserved.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    // vanilla javascript version
+    let tab = document.getElementsByClassName("tab-link");
+    let tabContent = document.getElementsByClassName("tab-content");
+
+    for (var i = 0; i < tab.length; i++) {
+      tab[i].addEventListener('click', function () {
+        for (var i = 0; i < tab.length; i++) {
+          tab[i].classList.remove('current');
+        };
+        for (var i = 0; i < tabContent.length; i++) {
+          tabContent[i].classList.remove('current');
+        };
+        this.classList.add('current');
+        var matchingTab = this.getAttribute('data-tab');
+
+        document.getElementById(matchingTab).classList.add('current');
+      });
+    }
+  </script>
+
+  <script type="text/javascript">
+      var swiper = new Swiper(".slide-container", {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      sliderPerGroup: 4,
+      loop: true,
+      centerSlide: "true",
+      fade: "true",
+      grabCursor: "true",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        520: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 1,
+        },
+        1000: {
+          slidesPerView: 1,
+        },
+      },
+    });
+    </script>
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+<script type="text/javascript">
+ document.addEventListener("DOMContentLoaded", function () {
+  const themeButtons = document.querySelectorAll(".theme-button");
+  const root = document.documentElement;
+
+  themeButtons.forEach(button => {
+    button.addEventListener("click", function () {
+      const selectedTheme = button.getAttribute("data-theme");
+      
+      root.classList.remove("theme1", "theme2", "theme3", "theme4");
+      root.classList.add(selectedTheme);
+      
+      if (root.classList.contains("dark-theme")) {
+        root.style.setProperty("--color-primary", `var(--color-primary-${selectedTheme})`);
+        root.style.setProperty("--color-secondary", `var(--color-secondary-${selectedTheme})`);
+      } else {
+        root.style.setProperty("--color-primary", `var(--color-primary-${selectedTheme})`);
+        root.style.setProperty("--color-secondary", `var(--color-secondary-${selectedTheme})`);
+      }
+    });
+  });
+});
+
+
+</script>
+</body>
+
+</html>

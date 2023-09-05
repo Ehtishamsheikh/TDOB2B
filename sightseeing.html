@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Travel Destination Online - Sightseeing</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+
+    
+  </head>
+
+  <body>
+    
+    <!-- ======= Header ======= -->
+
+    <header id="header" class="header fixed-top">
+      <div
+        class="container-fluid container-xl d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <img src="assets/img/logo.png" alt="" />
+        </a>
+
+        <nav id="navbar" class="navbar">
+          <ul>
+             <li><a class="nav-link scrollto" href="">Home</a></li>
+            <li><a class="nav-link scrollto" href="">About Us</a></li>
+            <li><a class="nav-link scrollto" href="hotel_search.html">Hotels</a></li>
+            <li><a class="nav-link scrollto" href="flight_search.html">Flights</a></li>
+            <li><a class="nav-link scrollto" href="umrah.html">Umrah</a></li>
+            <!-- <li><a class="nav-link scrollto" href="transfers.html">Transfers</a></li>
+            <li><a class="nav-link scrollto" href="sightseeing.html">Sightseeing</a></li>
+            <li><a class="nav-link scrollto" href="packages.html">Packages</a></li> -->
+            <li class="dropdown"><a href="#" class="active"><span>More Searches</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="transfers.html">Transfers</a></li>
+                <li><a href="sightseeing.html">Sightseeing</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="group_bookings.html">Group Bookings</a></li>
+              <li><a href="visa.html">VISA</a></li>
+              <li><a href="misc.html">MISC</a></li>
+            </ul>
+          </li>
+            <li><a class="nav-link scrollto" href="">Contact</a></li>    
+            <li class="dropdown"><a href="#"><span><i class="bi bi-person-circle" style="font-size: 16px;"></i> User, CX231</a>
+            <ul>
+              <li><a href="myAccount.html">My Account</a></li>
+              <li><a href="myBookings.html">My Bookings</a></li>
+              <li><a href="myReports.html">Reports</a></li>
+              <li><a href="quotation.html">Quotation</a></li>
+              <li><a href="myTravellers.html">Travellers</a></li>
+              <li><a href="index.html">LogOut</a></li>
+            </ul>
+          </li>        
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+        <!-- .navbar -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Hero Section -======= -->
+    <section class="hero_hotel_search">
+      <div class="info d-flex align-items-center">
+        <div class="container padding_container">
+          <div class="row justify-content-center align-items-center">
+            <div class="hotel_search_form_div col-lg-10 text-center" data-aos="fade-up">
+              <h3 class="hotel_search_form_heading">
+                Search for Sightseeing
+              </h3>
+              <!-- <p>Discover your perfect stay with our intuitive hotel search, tailored to your preferences and budget.</p> -->
+              <div class="hotel_search_form">
+                <form>
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <div class="form-group">
+                        <label for="floatingInput2"
+                          >Destination</label
+                        >
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1"
+                            ><i class="bi bi-geo-alt-fill"></i
+                          ></span>
+                          <input
+                            type="text"
+                            id="floatingInput2"
+                            class="form-control change"
+                            placeholder="Destination"
+                            aria-label="Username"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="floatingInput">Tour Date</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1"
+                            ><i class="bi bi-calendar-check-fill"></i
+                          ></span>
+                          <input
+                            type="date"
+                            id="floatingInput"
+                            class="form-control"
+                            placeholder="Hotel Name, City or Destination"
+                            aria-label="Username"
+                            aria-describedby="basic-addon1"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="floatingInput2">Currency</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1"
+                            ><i class="bi bi-coin
+                            "></i
+                          ></span>
+                          <select
+                            class="form-select input-group-text"
+                            aria-label="Default select example"
+                            id="floatingInput2"
+                          >
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="floatingInput2">Nationality</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1"
+                            ><i class="bi bi-flag-fill
+                            "></i
+                          ></span>
+                          <select
+                            class="form-select input-group-text"
+                            aria-label="Default select example"
+                            id="floatingInput2"
+                          >
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="row g-3 mb-3">
+                    <a href="#" id="moreOptionsToggle"
+                      >⮞ More Options: Country, City etc.</a
+                    >
+                  </div>
+                  <div id="moreOptionsRow" style="display: none">
+                    <div class="row g-3">
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="form-group">
+                          <label for="floatingInput">Country</label>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"
+                              ><i class="bi bi-globe-americas"></i
+                            ></span>
+                            <select
+                              class="form-select input-group-text"
+                              aria-label="Default select example"
+                              id="exampleFormControlInputSelect"
+                            >
+                              <option selected>Select</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="form-group">
+                          <label for="floatingInput">City</label>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"
+                              ><i class="bi bi-geo-fill"></i
+                            ></span>
+                            <select
+                              class="form-select input-group-text"
+                              aria-label="Default select example"
+                              id="exampleFormControlInputSelect"
+                            >
+                              <option selected>Select</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-3">
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="form-group">
+                          <label for="floatingInput">Adults</label>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"
+                              ><i class="bi bi-person-vcard"></i
+                            ></span>
+                            <select
+                              class="form-select input-group-text"
+                              aria-label="Default select example"
+                              id="exampleFormControlInputSelect"
+                            >
+                              <option selected>Select</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-12">
+                        <div class="form-group">
+                          <label for="floatingInput">Child</label>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"
+                              ><i class="bi bi-people-fill"></i
+                            ></span>
+                            <select
+                              class="form-select input-group-text"
+                              aria-label="Default select example"
+                              id="exampleFormControlInputSelect"
+                            >
+                              <option selected>Select</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  <div class="row g-3">
+                    <!-- <button class="search_form_btn">Search</button> -->
+                    <a href="sightseeing_listing.html" class="search_form_btn">Search</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="hero-carousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <!-- <div
+          class="carousel-item active"
+          style="background-image: url(assets/img/hero-carousel/1.webp)"
+        ></div>
+        <div
+          class="carousel-item"
+          style="background-image: url(assets/img/hero-carousel/2.webp)"
+        ></div>
+        <div
+          class="carousel-item"
+          style="background-image: url(assets/img/hero-carousel/3.jpg)"
+        ></div> -->
+
+        <!-- <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a> -->
+      </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <main id="main"></main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+              <h4>Our Newsletter</h4>
+              <p>
+                Subscribe to our mailing list & avail special offers, hot deals
+                and much more
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-info">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <img src="assets/img/logo.png" alt="" />
+                <!-- <span>FlexStart</span> -->
+              </a>
+              <p>
+                Cras fermentum odio eu feugiat lide par naso tierra.<br />
+                Justo eget nada terra videa magna derita valies darta donna<br />
+                mare fermentum iaculis eu non diam phasellus.
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="instagram"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-6 footer-links">
+              <h4>Discover</h4>
+              <ul>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Home</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">About us</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i> <a href="#">Services</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Terms of service</a>
+                </li>
+                <li>
+                  <i class="bi bi-chevron-right"></i>
+                  <a href="#">Privacy policy</a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-12 footer-contact text-center text-md-start"
+            >
+              <h4>Contact Us</h4>
+              <p>
+                Travel Destination Online Consultancy W.L.L Office 222, Building
+                79, Road 2802, Block 428 - Nordic Tower Seef, Kingdom Of
+                Bahrain.<br /><br />
+                <strong>Phone:</strong> ‭+973 13302122<br />
+                <strong>Email:</strong> support@tdonlines.com<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <div class="copyright">
+          © 2023 <strong>Travel Destination Online</strong> All Rights Reserved.
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main2.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myModal").modal("show");
+      });
+    </script>
+    <script type="text/javascript">
+      // vanilla javascript version
+      let tab = document.getElementsByClassName("tab-link");
+      let tabContent = document.getElementsByClassName("tab-content");
+
+      for (var i = 0; i < tab.length; i++) {
+        tab[i].addEventListener("click", function () {
+          for (var i = 0; i < tab.length; i++) {
+            tab[i].classList.remove("current");
+          }
+          for (var i = 0; i < tabContent.length; i++) {
+            tabContent[i].classList.remove("current");
+          }
+          this.classList.add("current");
+          var matchingTab = this.getAttribute("data-tab");
+
+          document.getElementById(matchingTab).classList.add("current");
+        });
+      }
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        // Toggle the mobile menu when the hamburger icon is clicked
+        $(".mobile-menu-toggle").on("click", function () {
+          $(".mobile-menu").toggleClass("active");
+        });
+      });
+    </script>
+    <script type="text/javascript">
+      // Add an event listener to the anchor tag
+      document
+        .getElementById("moreOptionsToggle")
+        .addEventListener("click", function () {
+          var moreOptionsRow = document.getElementById("moreOptionsRow");
+          var iconElement = document.getElementById("icon");
+
+          if (moreOptionsRow.style.display === "none") {
+            moreOptionsRow.style.display = "block";
+            setTimeout(function () {
+              moreOptionsRow.classList.add("show");
+              // iconElement.classList.replace("bi-caret-right-fill", "bi-caret-down-fill");
+            }, 20); // Add a small delay (20 milliseconds) to allow display:block to take effect before applying the transition
+            // Change the text to "Less Options" when the row is shown
+            document.getElementById("moreOptionsToggle").textContent =
+              "⮟ Less Options: Country, City etc.";
+          } else {
+            moreOptionsRow.classList.remove("show");
+            setTimeout(function () {
+              moreOptionsRow.style.display = "none";
+              // iconElement.classList.replace("bi-caret-down-fill", "bi-caret-right-fill");
+            }, 20); // Delay the display:none after the opacity transition completes
+            // Change the text to "More Options" when the row is hidden
+            document.getElementById("moreOptionsToggle").textContent =
+              "⮞ More Options: Country, City etc.";
+          }
+        });
+    </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "200px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+  </body>
+</html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Travel Destination Online - Book Now</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style type="text/css">
+
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+
+      <nav id="navbar" class="navbar">
+          <ul>
+             <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
+            <li><a class="nav-link scrollto" href="hotel_search.html">Hotels</a></li>
+            <li><a class="nav-link scrollto" href="flight_search.html">Flights</a></li>
+            <li><a class="nav-link scrollto" href="umrah.html">Umrah</a></li>
+            <!-- <li><a class="nav-link scrollto" href="transfers.html">Transfers</a></li>
+            <li><a class="nav-link scrollto" href="sightseeing.html">Sightseeing</a></li>
+            <li><a class="nav-link scrollto" href="packages.html">Packages</a></li> -->
+            <li class="dropdown"><a href="#"><span>More Searches</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="transfers.html">Transfers</a></li>
+                <li><a href="sightseeing.html">Sightseeing</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="active"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="group_bookings.html">Group Bookings</a></li>
+              <li><a href="visa.html">VISA</a></li>
+              <li><a href="misc.html">MISC</a></li>
+            </ul>
+          </li>
+            <li><a class="nav-link scrollto" href="">Contact</a></li>    
+            <li class="dropdown"><a href="#"><span><i class="bi bi-person-circle" style="font-size: 16px;"></i> User, CX231</a>
+            <ul>
+              <li><a href="myAccount.html">My Account</a></li>
+              <li><a href="myBookings.html">My Bookings</a></li>
+              <li><a href="myReports.html">Reports</a></li>
+              <li><a href="quotation.html">Quotation</a></li>
+              <li><a href="myTravellers.html">Travellers</a></li>
+              <li><a href="index.html">LogOut</a></li>
+            </ul>
+          </li>        
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main">
+
+    <section class="hotel_bookNow">
+      <div class="container" data-aos="fade-up">
+        <div class="row gx-0">
+          <div class="hotel_bookNow_form_div col-lg-12 col-12">
+            <div class="bookNow_tabs">
+              <div class="bookNow_tabs_div">
+                <div class="bookNow_tabs_heading">
+                  <h2>Flight Booking Steps</h2>
+                </div>
+                <div class="tabs">
+                  <div style="display: flex; flex-direction: column;">
+                    <li data-tab-target="#step1" class="tab"><i class="bi bi-check2"></i></li>
+                    <p class="tab_text">Flight Search</p>
+                  </div>
+                  <div style="display: flex; flex-direction: column;">
+                    <li data-tab-target="#step1" class="active tab">2</li>
+                    <p class="tab_text">Enter Passenger Details</p>
+                  </div>
+                  <div style="display: flex; flex-direction: column;">
+                    <li data-tab-target="#step2" class="tab tab-2">3</li>
+                    <p class="tab_text">Review and Confirm Booking</p>
+                  </div>
+                </div>
+                <!-- <ul class="tabs">
+                  <div style="display: flex; flex-direction: column;">
+                    <li data-tab-target="#step1" class="active tab"></li>
+                    <p>Enter Passenger Details</p>
+                  </div>
+                  <div style="display: flex; flex-direction: column;">
+                    <li data-tab-target="#step2" class="tab tab-2"></li>
+                    <p>Review and Confirm Booking</p>
+                  </div>
+                  
+                </ul> -->
+              </div>
+
+              <div class="tab-content">
+                <div id="step1" data-tab-content class="active">
+                  <div class="hotelDetails">
+                    <h1>Departure</h1>
+                    <div class="hotelDetails_dates mt-3">
+                      <p>Flight No.<br><span>EY 232</span><br><span>Flight 321</span></p>
+                      <p>Departure<br><span>ISB, Islamabad</span><br><span>Fri, 22 Sep 23, 04:30 hrs</span></p>
+                      <p>Arrival<br><span>AUH, Abu Dhabi Intl</span><br><span>Fri, 22 Sep 23, 06:50 hrs</span></p>
+                      <p>Duration<br><span>7 hrs 55 min</span></p>
+                      <p>Baggage<br><span>Cabin: Included</span><br><span>Check-In: 0KG</span></p>
+                    </div>
+                    <div class="hotelDetails_dates mt-3">
+                      <p>Flight No.<br><span>EY 232</span><br><span>Flight 321</span></p>
+                      <p>Departure<br><span>ISB, Islamabad</span><br><span>Fri, 22 Sep 23, 04:30 hrs</span></p>
+                      <p>Arrival<br><span>AUH, Abu Dhabi Intl</span><br><span>Fri, 22 Sep 23, 06:50 hrs</span></p>
+                      <p>Duration<br><span>7 hrs 55 min</span></p>
+                      <p>Baggage<br><span>Cabin: Included</span><br><span>Check-In: 0KG</span></p>
+                    </div>
+                  </div>
+                  <div class="roomTraveller_details">
+                    <div class="roomDetails_heading">
+                      <h1>Passenger Details</h1>
+                    </div>
+                    <div class="roomDetails_form">
+                      <h3>Adult 1</h3>
+                      <form>
+                        <div class="traveller_form">
+                          <div class="row g-3">
+                            <div class="col-4">
+                              <div class="form-group">
+                                <label for="floatingInput2">Title</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1"
+                                    ><i class="bi bi-person-fill
+                                    "></i
+                                  ></span>
+                                  <select
+                                    class="form-select input-group-text"
+                                    aria-label="Default select example"
+                                    id="floatingInput2"
+                                  >
+                                    <option selected>Mr.</option>
+                                    <option value="1">Mrs.</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="form-group">
+                                <label for="floatingInput2"
+                                  >First Name</label
+                                >
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1"
+                                    ><i class="bi bi-person-fill"></i
+                                  ></span>
+                                  <input
+                                    type="text"
+                                    id="floatingInput2"
+                                    class="form-control change"
+                                    placeholder=""
+                                    aria-label="Username"
+                                    aria-describedby="basic-addon1"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="form-group">
+                                <label for="floatingInput2"
+                                  >Last Name</label
+                                >
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1"
+                                    ><i class="bi bi-person-fill"></i
+                                  ></span>
+                                  <input
+                                    type="text"
+                                    id="floatingInput2"
+                                    class="form-control change"
+                                    placeholder=""
+                                    aria-label="Username"
+                                    aria-describedby="basic-addon1"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+
+                      <div class="row g-3">
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="floatingInput2"
+                                >Email</label
+                              >
+                              <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"
+                                  ><i class="bi bi-person-fill"></i
+                                ></span>
+                                <input
+                                  type="text"
+                                  id="floatingInput2"
+                                  class="form-control change"
+                                  placeholder=""
+                                  aria-label="Username"
+                                  aria-describedby="basic-addon1"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="form-group">
+                              <label for="floatingInput2"
+                                >Contact No.</label
+                              >
+                              <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"
+                                  ><i class="bi bi-person-fill"></i
+                                ></span>
+                                <input
+                                  type="text"
+                                  id="floatingInput2"
+                                  class="form-control change"
+                                  placeholder=""
+                                  aria-label="Username"
+                                  aria-describedby="basic-addon1"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-4">
+                              <div class="form-group">
+                                <label for="floatingInput2"
+                                  >Frequent Flyer Number</label
+                                >
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1"
+                                    ><i class="bi bi-person-fill"></i
+                                  ></span>
+                                  <input
+                                    type="text"
+                                    id="floatingInput2"
+                                    class="form-control change"
+                                    placeholder=""
+                                    aria-label="Username"
+                                    aria-describedby="basic-addon1"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="form-group">
+                                <label for="floatingInput2"
+                                  >Number</label
+                                >
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1"
+                                    ><i class="bi bi-person-fill"></i
+                                  ></span>
+                                  <input
+                                    type="text"
+                                    id="floatingInput2"
+                                    class="form-control change"
+                                    placeholder=""
+                                    aria-label="Username"
+                                    aria-describedby="basic-addon1"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="form-group">
+                                <label for="floatingInput2">Nationality</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1"
+                                    ><i class="bi bi-person-fill
+                                    "></i
+                                  ></span>
+                                  <select
+                                    class="form-select input-group-text"
+                                    aria-label="Default select example"
+                                    id="floatingInput2"
+                                  >
+                                    <option selected>Pakistani</option>
+                                    <option value="1">2</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+
+                        
+                        <div class="roomDetails_contactForm">
+                          <h3>Passport Details</h3>
+                          <div class="row g-3">
+                          <div class="col-4">
+                            <div class="form-group">
+                              <label for="floatingInput2"
+                                >Passport No.</label
+                              >
+                              <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"
+                                  ><i class="bi bi-envelope-fill"></i
+                                ></span>
+                                <input
+                                  type="text"
+                                  id="floatingInput2"
+                                  class="form-control change"
+                                  placeholder=""
+                                  aria-label="Username"
+                                  aria-describedby="basic-addon1"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-4">
+                            <div class="form-group">
+                              <label for="floatingInput2"
+                                >Passport Expiry</label
+                              >
+                              <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1"
+                                  ><i class="bi bi-flag-fill"></i
+                                ></span>
+                                <input
+                                  type="date"
+                                  id="floatingInput2"
+                                  class="form-control change"
+                                  placeholder=""
+                                  aria-label="Username"
+                                  aria-describedby="basic-addon1"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                        <br><br>
+
+                        <div class="roomDetails_specialRequest_form">
+                          <h3>Additional Meal</h3>
+                           <div class="row g-3">
+                          <div class="col-6">
+                            <div class="form-group">
+                                <label for="floatingInput2">Meal</label>
+                                <div class="input-group mb-3">
+                                  <span class="input-group-text" id="basic-addon1"
+                                    ><i class="bi bi-person-fill
+                                    "></i
+                                  ></span>
+                                  <select
+                                    class="form-select input-group-text"
+                                    aria-label="Default select example"
+                                    id="floatingInput2"
+                                  >
+                                    <option selected>Select</option>
+                                    <option value="1">1</option>
+                                  </select>
+                                </div>
+                              </div>
+                          </div>
+                          
+                        </div>
+                        </div>
+                      </form>
+                    </div>
+
+                    <div class="bookingNotes_div">
+                      <h3>Cancellation Cover:</h3>
+                      <p>
+                        Offer your customers an upgrade to Refundable Terms, enabling a 100% refund if they cannot and can evidence one of the many reasons in the T&Cs.<br>Our global partner Protect Group is the administrator of the terms; they will handle and pay eligible refunds within 48 hours entirely on your behalf.</p>
+                      <div class="form-group form-check">
+                        <input type="radio" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1"> I do not wish to secure my cancellation</label>
+                      </div>
+                       <div class="form-group form-check">
+                        <input type="radio" class="form-check-input" id="exampleCheck2">
+                        <label class="form-check-label" for="exampleCheck2"> <strong>Yes, Secure my cancellation</strong></label>
+                      </div>
+                       
+                    </div>
+                    <div class="cancellationPolicy_div">
+                      
+                      <br>
+                      <button>Pay Now with Payment Gateway</button>
+                    </div>
+                  </div>
+                </div>
+                <div id="step2" data-tab-content>
+                  <div class="reviewBooking">
+                    <div class="row">
+                      <div class="col-4">
+                      <h3>Purchase Amount</h3>
+                      <p>187.61  USD</p>
+                      </div>
+                      <div class="col-4">
+                        <h3>Convenience fee</h3>
+                        <p>4.69  USD</p>
+                      </div>
+                      <div class="col-4">
+                        <h3>Total Charges in USD</h3>
+                        <p>192.3  USD</p>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col-4">
+                        <h3>Total Charges in AED</h3>
+                        <p>706.61  AED</p>
+                      </div>
+                    </div>
+                    <button class="reviewBooking_btn">Pay Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our mailing list & avail special offers, hot deals and much more </p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <!-- <span>FlexStart</span> -->
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra.<br> Justo eget nada terra videa magna derita valies darta donna<br> mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 footer-links">
+            <h4>Discover</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              Travel Destination Online Consultancy W.L.L
+              Office 222, Building 79, Road 2802,
+              Block 428 - Nordic Tower Seef, Kingdom Of Bahrain.<br><br>
+              <strong>Phone:</strong> ‭+973 13302122<br>
+              <strong>Email:</strong>  support@tdonlines.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="copyright">
+        © 2023 <strong>Travel Destination Online</strong>   All Rights Reserved.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    // vanilla javascript version
+    let tab = document.getElementsByClassName("tab-link");
+    let tabContent = document.getElementsByClassName("tab-content");
+
+    for (var i = 0; i < tab.length; i++) {
+      tab[i].addEventListener('click', function () {
+        for (var i = 0; i < tab.length; i++) {
+          tab[i].classList.remove('current');
+        };
+        for (var i = 0; i < tabContent.length; i++) {
+          tabContent[i].classList.remove('current');
+        };
+        this.classList.add('current');
+        var matchingTab = this.getAttribute('data-tab');
+
+        document.getElementById(matchingTab).classList.add('current');
+      });
+    }
+  </script>
+
+  <script type="text/javascript">
+    const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
+  </script>
+
+</body>
+
+</html>

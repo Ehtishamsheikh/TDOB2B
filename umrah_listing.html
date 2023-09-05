@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Travel Destination Online - Umrah Listing</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Include Bootstrap JS (Popper.js and jQuery are required by Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <style type="text/css">
+      
+
+/* Customize the appearance of the date picker */
+        .ui-datepicker {
+            font-size: 16px;
+        }
+        .ui-datepicker-header {
+            background-color:#0B4C84;
+            color: #fff;
+        }
+        .ui-datepicker-calendar {
+            border: 1px solid #ccc;
+        }
+        .ui-datepicker-calendar a {
+            color: #333;
+        }
+        .ui-widget-header a{
+          background-color: #fff !important;
+          cursor: pointer;
+        }
+        .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+            border: 1px solid #dad55e;
+            background: #fffa90;
+            color: #777620;
+        }
+    </style>
+
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg mt-3" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Customize Your Umrah Package</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="hotel_search_form">
+            <form>
+                  <div class="row g-3">
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="floatingInput2">Select Destination</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1"
+                            ><i class="bi bi-pin-map-fill"></i
+                          ></span>
+                          <select
+                            class="form-select input-group-text"
+                            aria-label="Default select example"
+                            id="floatingInput2"
+                          >
+                            <option selected disabled="">Select</option>
+                            <option value="1">Makkah</option>
+                            <option value="2">Medinah</option>
+                            <option value="3">Jaddah</option>
+                            <option value="3">Taif</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="floatingInput2"
+                          >Check-In Date</label
+                        >
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                            </div>
+                            <input type="text" class="form-control datepicker" placeholder="Select a Date">
+                        </div>
+                      </div>
+                      
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="floatingInput2"
+                          >Check-Out Date</label
+                        >
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                            </div>
+                            <input type="text" class="form-control datepicker" placeholder="Select a Date">
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="floatingInput2">Select Nationality</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1"
+                            ><i class="bi bi-pin-map-fill"></i
+                          ></span>
+                          <select
+                            class="form-select input-group-text"
+                            aria-label="Default select example"
+                            id="floatingInput2"
+                          >
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="floatingInput2">Country of Residence</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1"
+                            ><i class="bi bi-pin-map-fill"></i
+                          ></span>
+                          <select
+                            class="form-select input-group-text"
+                            aria-label="Default select example"
+                            id="floatingInput2"
+                          >
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 col-12">
+                      <div class="form-group">
+                        <label for="floatingInput2">Traveller and Room</label>
+                        <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1"
+                            ><i class="bi bi-pin-map-fill"></i
+                          ></span>
+                          <select
+                            class="form-select input-group-text"
+                            aria-label="Default select example"
+                            id="floatingInput2"
+                          >
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    
+
+                  </div>
+
+                
+                  <div class="row g-3">
+                    <!-- <button class="search_form_btn">Search</button> -->
+                    <a href="customize_umrah_package.html" class="search_form_btn">Search</a>
+                  </div>
+                </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logo.png" alt="">
+      </a>
+
+      <nav id="navbar" class="navbar">
+          <ul>
+             <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+            <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
+            <li><a class="nav-link scrollto" href="hotel_search.html">Hotels</a></li>
+            <li><a class="nav-link scrollto" href="flight_search.html">Flights</a></li>
+            <li><a class="nav-link scrollto" href="umrah.html">Umrah</a></li>
+            <!-- <li><a class="nav-link scrollto" href="transfers.html">Transfers</a></li>
+            <li><a class="nav-link scrollto" href="sightseeing.html">Sightseeing</a></li>
+            <li><a class="nav-link scrollto" href="packages.html">Packages</a></li> -->
+            <li class="dropdown"><a href="#" class="active"><span>More Searches</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="transfers.html">Transfers</a></li>
+                <li><a href="sightseeing.html">Sightseeing</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="group_bookings.html">Group Bookings</a></li>
+              <li><a href="visa.html">VISA</a></li>
+              <li><a href="misc.html">MISC</a></li>
+            </ul>
+          </li>
+            <li><a class="nav-link scrollto" href="">Contact</a></li>    
+            <li class="dropdown"><a href="#"><span><i class="bi bi-person-circle" style="font-size: 16px;"></i> User, CX231</a>
+            <ul>
+              <li><a href="myAccount.html">My Account</a></li>
+              <li><a href="myBookings.html">My Bookings</a></li>
+              <li><a href="myReports.html">Reports</a></li>
+              <li><a href="quotation.html">Quotation</a></li>
+              <li><a href="myTravellers.html">Travellers</a></li>
+              <li><a href="index.html">LogOut</a></li>
+            </ul>
+          </li>        
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        </nav>
+
+    </div>
+  </header><!-- End Header -->
+
+
+  <main id="main">
+    <!-- ======= filters_listing ======= -->
+    <section class="recent_searches umrah_recent_searches">
+      <div class="container recent_searches_mainDiv">
+         <div class="hotel_search_form umrah_listing_form">
+            <form>
+              <div class="row g-3">
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="form-group">
+                    <label for="floatingInput2">Select Destination</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1"
+                        ><i class="bi bi-pin-map-fill"></i
+                      ></span>
+                      <select
+                        class="form-select input-group-text"
+                        aria-label="Default select example"
+                        id="floatingInput2"
+                      >
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="form-group">
+                    <label for="floatingInput2"
+                      >Check-In Date</label
+                    >
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1"
+                        ><i class="bi bi-calendar-check-fill"></i
+                      ></span>
+                      <input
+                        type="date"
+                        id="floatingInput2"
+                        class="form-control change"
+                        placeholder="Hotel Name, City or Destination"
+                        aria-label="Username"
+                        aria-describedby="basic-addon1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="form-group">
+                    <label for="floatingInput2">Select Nationality</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1"
+                        ><i class="bi bi-pin-map-fill"></i
+                      ></span>
+                      <select
+                        class="form-select input-group-text"
+                        aria-label="Default select example"
+                        id="floatingInput2"
+                      >
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row g-3">
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="form-group">
+                    <label for="floatingInput2">Country of Residence</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1"
+                        ><i class="bi bi-pin-map-fill"></i
+                      ></span>
+                      <select
+                        class="form-select input-group-text"
+                        aria-label="Default select example"
+                        id="floatingInput2"
+                      >
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="form-group">
+                    <label for="floatingInput2">Traveller and Room</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text" id="basic-addon1"
+                        ><i class="bi bi-pin-map-fill"></i
+                      ></span>
+                      <select
+                        class="form-select input-group-text"
+                        aria-label="Default select example"
+                        id="floatingInput2"
+                      >
+                        <option selected>Select</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+
+                
+
+              </div>
+
+            
+              <div class="row g-3">
+                <!-- <button class="search_form_btn">Search</button> -->
+                <a href="transfer_listing.html" class="search_form_btn">Search</a>
+              </div>
+            </form>
+          </div>
+      </div>
+    </section><!-- End filters_listing -->
+    
+    <section class="listing_section">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="listing_modifySearch_div">
+              <div class="listing_modifySearch_div_text col-lg-6 col-12">
+                <h4>46 Hotels found</h4>
+                <p>Available hotels for your search criteria</p>
+              </div>
+              <!-- <div class="listing_modifySearch_div_btns col-lg-6 col-12">
+                <button class="btn_modifySearch" type="button" data-toggle="modal" data-target="#exampleModal2">Modify Search</button>
+              </div>  -->
+            </div>
+          </div>
+          <div class="row">
+            <div class="listing_section_mainContent col-12">
+              
+
+              <div class="listing_section_mainContent_umrahLists col-lg-12 col-12">
+                <div class="filtersDiv">
+                  <i class="bi bi-filter"></i>
+                  <h4>Sort By:</h4>
+                  <ul>
+                    <li><a href="">Price</a></li>
+                    <li><a href="">Name</a></li>
+                    <li><a href="">Rating</a></li>
+                    <li><a href="">All Hotels</a></li>
+                    <li><a href="">Distance from Haram</a></li>
+                  </ul>
+                </div>
+                  <div class="umrahlists_main">
+                    <div class="umrahLists_div">
+                      <div class="umrahImg col-lg-3">
+                        <img src="assets/img/umrah-hotel1.jpg">
+                      </div>
+                      <div class="umrahDetails col-lg-6">
+                        <a href="umrah_package_details.html"><h2>Makarem Mina Hotel</h2></a>
+                        <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> | Independent</p>
+                        <p><i class="bi bi-geo-alt-fill"></i>  As Surur Street, Al Azeziah District, Al Aziziyah, 21955 Makkah, Saudi Arabia</p>
+                        <span><i class="fa-solid fa-kaaba"></i> Haram: 3.73km</span>
+                        <div class="umrahDetails_inclusions">
+                          <h5>Inclusions:</h5>
+                          <ul>
+                            <li>WiFi, Wired Internet</li>
+                            <li>Restaurants in Hotel</li>
+                            <li>Room Service</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="umrahPrice col-lg-3">
+                        <p><i class="bi bi-dot"></i> Available</p>
+                        <span>All taxes inclusive</span>
+                        <span class="price_tag">USD 334.05</span>
+                        <div style="display: flex; justify-content: flex-end;">
+                          <button class="price_btn_umrah" type="button" data-toggle="modal" data-target="#exampleModal2">Customize & Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="umrahlists_main mt-3">
+                    <div class="umrahLists_div">
+                      <div class="umrahImg col-lg-3">
+                        <img src="assets/img/umrah-hotel2.jpg">
+                      </div>
+                      <div class="umrahDetails col-lg-6">
+                        <a href="umrah_package_details.html"><h2>Al Olayan Plaza Hotel</h2></a>
+                        
+                        <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> | Independent</p>
+                        <p><i class="bi bi-geo-alt-fill"></i>   Al Masjid Al Haram Road, Al Mursalat, 24243 Makkah, Saudi Arabia</p>
+                        <span><i class="fa-solid fa-kaaba"></i> Haram: 3.73km</span>
+                        <div class="umrahDetails_inclusions">
+                          <h5>Inclusions:</h5>
+                          <ul>
+                            <li>WiFi, Wired Internet</li>
+                            <li>Restaurants in Hotel</li>
+                            <li>Room Service</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="umrahPrice col-lg-3">
+                        <p><i class="bi bi-dot"></i> Available</p>
+                        <span>All taxes inclusive</span>
+                        <span class="price_tag">USD 334.05</span>
+                        <div style="display: flex; justify-content: flex-end;">
+                          <button class="price_btn_umrah" type="button" data-toggle="modal" data-target="#exampleModal2">Customize & Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="umrahlists_main mt-3">
+                    <div class="umrahLists_div">
+                      <div class="umrahImg col-lg-3">
+                        <img src="assets/img/umrah-hotel3.jpg">
+                      </div>
+                      <div class="umrahDetails col-lg-6">
+                        <h2>Sama Al Diyafah Hotel</h2>
+                        <p><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> | Independent</p>
+                        <p><i class="bi bi-geo-alt-fill"></i>  King Abdul Aziz Road, Alaziziyyah, 24235 Makkah, Saudi Arabia</p>
+                        <span><i class="fa-solid fa-kaaba"></i> Haram: 3.73km</span>
+                        <div class="umrahDetails_inclusions">
+                          <h5>Inclusions:</h5>
+                          <ul>
+                            <li>WiFi, Wired Internet</li>
+                            <li>Restaurants in Hotel</li>
+                            <li>Room Service</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="umrahPrice col-lg-3">
+                        <p><i class="bi bi-dot"></i> Available</p>
+                        <span>All taxes inclusive</span>
+                        <span class="price_tag">USD 334.05</span>
+                        <div style="display: flex; justify-content: flex-end;">
+                          <button class="price_btn_umrah" type="button" data-toggle="modal" data-target="#exampleModal2">Customize & Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pagination_div">
+                    <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <!-- <div class="footer-adBanner">
+      <div class="container-fluid" style="padding: 0px !important;">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="container swiper">
+            <div class="slide-container">
+              <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                  <img src="assets/img/adBanner.jpg">
+                </div>
+                <div class="card swiper-slide">
+                  <img src="assets/img/adBanner.jpg">
+                </div>
+                <div class="card swiper-slide">
+                  <img src="assets/img/adBanner.jpg">
+                </div>
+                <div class="card swiper-slide">
+                  <img src="assets/img/adBanner.jpg">
+                </div>
+              </div>
+            </div>
+            
+            <div class="swiper-pagination"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our mailing list & avail special offers, hot deals and much more </p>
+          </div>
+          <div class="col-lg-6">
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="assets/img/logo.png" alt="">
+              <!-- <span>FlexStart</span> -->
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra.<br> Justo eget nada terra videa magna derita valies darta donna<br> mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6 footer-links">
+            <h4>Discover</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              Travel Destination Online Consultancy W.L.L
+              Office 222, Building 79, Road 2802,
+              Block 428 - Nordic Tower Seef, Kingdom Of Bahrain.<br><br>
+              <strong>Phone:</strong> ‭+973 13302122<br>
+              <strong>Email:</strong>  support@tdonlines.com<br>
+            </p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="copyright">
+        © 2023 <strong>Travel Destination Online</strong>   All Rights Reserved.
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script type="text/javascript">
+    // vanilla javascript version
+    let tab = document.getElementsByClassName("tab-link");
+    let tabContent = document.getElementsByClassName("tab-content");
+
+    for (var i = 0; i < tab.length; i++) {
+      tab[i].addEventListener('click', function () {
+        for (var i = 0; i < tab.length; i++) {
+          tab[i].classList.remove('current');
+        };
+        for (var i = 0; i < tabContent.length; i++) {
+          tabContent[i].classList.remove('current');
+        };
+        this.classList.add('current');
+        var matchingTab = this.getAttribute('data-tab');
+
+        document.getElementById(matchingTab).classList.add('current');
+      });
+    }
+  </script>
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const showRoomsBtn = document.getElementById('showRoomsBtn');
+    const roomOptions = document.getElementById('roomOptions');
+    let isRoomOptionsVisible = false;
+
+    showRoomsBtn.addEventListener('click', function () {
+      if (isRoomOptionsVisible) {
+        roomOptions.style.display = 'none';
+        isRoomOptionsVisible = false;
+      } else {
+        roomOptions.style.display = 'block';
+        isRoomOptionsVisible = true;
+      }
+    });
+  });
+</script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const showRoomsBtn2 = document.getElementById('showRoomsBtn2');
+    const roomOptions2 = document.getElementById('roomOptions2');
+
+    showRoomsBtn2.addEventListener('click', function () {
+      roomOptions2.style.display = 'block';
+    });
+  });
+</script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const showRoomsBtn3 = document.getElementById('showRoomsBtn3');
+    const roomOptions3 = document.getElementById('roomOptions3');
+
+    showRoomsBtn3.addEventListener('click', function () {
+      roomOptions3.style.display = 'block';
+    });
+  });
+</script>
+
+<script type="text/javascript">
+      // Add an event listener to the anchor tag
+      document
+        .getElementById("moreOptionsToggle")
+        .addEventListener("click", function () {
+          var moreOptionsRow = document.getElementById("moreOptionsRow");
+          var iconElement = document.getElementById("icon");
+
+          if (moreOptionsRow.style.display === "none") {
+            moreOptionsRow.style.display = "block";
+            setTimeout(function () {
+              moreOptionsRow.classList.add("show");
+              // iconElement.classList.replace("bi-caret-right-fill", "bi-caret-down-fill");
+            }, 20); // Add a small delay (20 milliseconds) to allow display:block to take effect before applying the transition
+            // Change the text to "Less Options" when the row is shown
+            document.getElementById("moreOptionsToggle").textContent =
+              "⮟ Less Options: Country, City etc.";
+          } else {
+            moreOptionsRow.classList.remove("show");
+            setTimeout(function () {
+              moreOptionsRow.style.display = "none";
+              // iconElement.classList.replace("bi-caret-down-fill", "bi-caret-right-fill");
+            }, 20); // Delay the display:none after the opacity transition completes
+            // Change the text to "More Options" when the row is hidden
+            document.getElementById("moreOptionsToggle").textContent =
+              "⮞ More Options: Country, City etc.";
+          }
+        });
+    </script>
+
+    <script type="text/javascript">
+      var swiper = new Swiper(".slide-container", {
+      slidesPerView: 4,
+      spaceBetween: 20,
+      sliderPerGroup: 4,
+      loop: true,
+      centerSlide: "true",
+      fade: "true",
+      grabCursor: "true",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        520: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 1,
+        },
+        1000: {
+          slidesPerView: 1,
+        },
+      },
+    });
+    </script>
+
+    <script>
+        $(function() {
+            $(".datepicker").datepicker();
+        });
+    </script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
